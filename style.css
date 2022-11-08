@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121214;
+    background-image: url(assets/bgBlue.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body *{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+#app{
+    border: 1px solid red;
+    width: fit-content;
+    margin: 100px auto;
+    background-color: #360499;
+    padding: 50px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+input + strong{
+    margin-top: 10px;
+}
+
+#button_login{
+    margin-top: 20px;
+    cursor: hand;
+    background-color: #121214;
+    color: white;
+}
+
+input{
+    border-radius: 5px;
+    color: black;
+}
+
+main > span{
+    text-align: center;
+    margin-top: 15px;
+}
