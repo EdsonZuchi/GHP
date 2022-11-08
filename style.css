@@ -19,10 +19,9 @@ body *{
 }
 
 #app{
-    border: 1px solid red;
     width: fit-content;
-    margin: 100px auto;
-    background-color: #360499;
+    margin: 200px auto;
+    background-color: #1d1d1f;
     padding: 50px;
 }
 
@@ -43,12 +42,13 @@ input + strong{
 #button_login{
     margin-top: 20px;
     cursor: hand;
-    background-color: #121214;
+    background-color: #1d1d1f;
     color: white;
 }
 
 input{
-    border-radius: 5px;
+    border-radius: 6px;
+    border: 1px solid white;
     color: black;
 }
 
@@ -56,3 +56,27 @@ main > span{
     text-align: center;
     margin-top: 15px;
 }
+
+.border-gradient{
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #00ccff, #d400d4);
+}
+
+#app{
+    --angle: 0deg;
+    border-image: linear-gradient(var(--angle), #00ccff, #d400d4) 1;
+    animation: 6s rotate linear infinite;
+ }
+  
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+ }
