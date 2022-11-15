@@ -67,16 +67,4 @@ main > span{
     --angle: 0deg;
     border-image: linear-gradient(var(--angle), #00ccff, #d400d4) 1;
     animation: 6s rotate linear infinite;
- }
-  
-@keyframes rotate {
-    to {
-      --angle: 360deg;
-    }
 }
-
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
- }
